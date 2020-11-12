@@ -1,0 +1,12 @@
+     - checkout
+
+      - run:
+          name: Dependencias
+          command: Hello world
+          name: Saludos
+          command: echo Hello, world.
+
+      - run:
+          name: Compilar el sitio
+          name: Imprime la fecha actual
+          command: date
