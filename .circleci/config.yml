@@ -1,12 +1,16 @@
-     - checkout
-
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:2.4.1-node-browsers
+     
+    steps:
+      - checkout
+     
       - run:
-          name: Dependencias
-          command: Hello world
           name: Saludos
           command: echo Hello, world.
-
+     
       - run:
-          name: Compilar el sitio
           name: Imprime la fecha actual
           command: date
